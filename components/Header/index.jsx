@@ -8,7 +8,7 @@ import TRUCSR_LOGO from "../../assets/images/TRUCSR-icon.png";
 const Header = () => {
   return (
     <HeaderStyles>
-      <Container className="container" padding="1rem 1rem 1rem 8rem">
+      <Container className="container">
         <div className="logo">
           <img src={TRUCSR_LOGO} alt="trucsr" />
         </div>

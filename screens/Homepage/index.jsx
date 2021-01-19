@@ -1,10 +1,11 @@
 import React from "react";
 import PublicLayout from "../../components/Layouts/PublicLayout";
+import HeroSection from "./HeroSection";
 
 const Homepage = () => {
   return (
     <PublicLayout>
-      <h2>We are constructing the home page</h2>
+      <HeroSection />
     </PublicLayout>
   );
 };
