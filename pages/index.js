@@ -1,18 +1,12 @@
-import Head from "next/head";
+import React from "react";
+import Homepage from "../screens/Homepage";
 
-export default function Home() {
+const index = () => {
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>Hello</h1>
-      </main>
-
-      <footer>footer</footer>
+      <Homepage />
     </div>
   );
-}
+};
+
+export default index;
