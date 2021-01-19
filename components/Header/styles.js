@@ -4,6 +4,9 @@ export const HeaderStyles = styled("div")`
   width: 100%;
   display: flex;
   background: transparent;
+  background: ${({ position }) => (position < 100 ? "transparent" : "#364bac")};
+  position: fixed;
+  z-index: 100000;
 
   .container {
     width: 100%;
@@ -36,9 +39,9 @@ export const HeaderStyles = styled("div")`
 
     a {
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 500;
-      padding: 1.2rem;
+      padding: 1.1rem;
       transition: color 0.2s ease-in;
     }
 

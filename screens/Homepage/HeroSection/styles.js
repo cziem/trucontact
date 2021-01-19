@@ -17,10 +17,10 @@ export const HeroSectionStyles = styled("div")`
     position: absolute;
     background: rgb(19, 14, 37);
     background: linear-gradient(
-      52deg,
+      74deg,
       rgba(19, 14, 37, 1) 0%,
-      rgba(20, 14, 37, 1) 25%,
-      rgba(40, 35, 56, 0.9220063025210083) 41%,
+      rgba(20, 14, 37, 1) 33%,
+      rgba(40, 35, 56, 0.9220063025210083) 56%,
       rgba(255, 255, 255, 0.1741071428571429) 100%
     );
   }

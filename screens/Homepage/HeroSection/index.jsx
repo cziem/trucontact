@@ -1,11 +1,13 @@
 import React from "react";
-import { Container } from "../../../components/Grids/Container";
+import Header from "../../../components/Header";
 import { HeroSectionStyles } from "./styles";
 
 const HeroSection = () => {
   return (
     <HeroSectionStyles>
       <div className="overlay" />
+
+      {/* <Header /> */}
 
       <section>
         <div className="info">

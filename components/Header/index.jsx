@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { Container } from "../Grids/Container";
 import { HeaderStyles } from "./styles";
@@ -6,8 +6,20 @@ import { BsArrowRight as RightArrowIcon } from "react-icons/bs";
 import TRUCSR_LOGO from "../../assets/images/TRUCSR-icon.png";
 
 const Header = () => {
+  const [position, setPosition] = useState(0);
+
+  const handleScroll = () => setPosition(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    setPosition(window.screenY);
+
+    // Clean up
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [position]);
+
   return (
-    <HeaderStyles>
+    <HeaderStyles position={position}>
       <Container className="container">
         <div className="logo">
           <img src={TRUCSR_LOGO} alt="trucsr" />
