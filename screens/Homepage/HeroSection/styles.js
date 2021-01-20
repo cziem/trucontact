@@ -4,7 +4,7 @@ import HeroBNG from "../../../assets/images/hero_bng_1.jpg";
 export const HeroSectionStyles = styled("div")`
   background: url(${HeroBNG}) center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,7 @@ export const HeroSectionStyles = styled("div")`
 
     .info {
       width: 45%;
+      margin-bottom: 1.5rem;
 
       h3 {
         color: ${({ color, theme }) =>
@@ -84,6 +85,13 @@ export const HeroSectionStyles = styled("div")`
           font-size: 2rem;
           font-weight: 600;
         }
+      }
+    }
+
+    button {
+      svg {
+        top: 0.3rem;
+        position: relative;
       }
     }
 

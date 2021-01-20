@@ -9,6 +9,8 @@ const variantSize = (size) =>
       ? "0.775rem"
       : size === "lg"
       ? "1rem"
+      : size === "xl"
+      ? "1.68rem"
       : ""
     : "0.775rem";
 
@@ -20,6 +22,8 @@ const variantIconSize = (size) =>
       ? "medium"
       : size === "lg"
       ? "large"
+      : size === "xl"
+      ? "1.68rem"
       : ""
     : "medium";
 
@@ -106,6 +110,51 @@ export const ButtonStyles = styled.button`
     svg {
       font-size: ${({ size }) => variantIconSize(size)};
       font-weight: 600;
+    }
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const AlternateButtonStyles = styled("button")`
+  border: none;
+  letter-spacing: 0.02857em;
+  width: ${({ fullwidth }) => (fullwidth ? "100%" : "max-content")};
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  .text__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .text {
+      font-size: ${({ size }) => variantSize(size)};
+      color: ${({ color }) => (color ? color : "#4cb952")};
+      border-bottom: solid #4cb952;
+    }
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  .icon {
+    border-bottom: 0;
+    position: relative;
+    padding-left: 1rem;
+    transition: position 0.2s ease-in-out;
+
+    svg {
+      font-weight: 600;
+      font-size: ${({ size }) => variantIconSize(size)};
+      color: ${({ color }) => (color ? color : "#4cb952")};
     }
   }
 

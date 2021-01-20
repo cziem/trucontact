@@ -1,24 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ButtonStyles } from "./styles";
+import { ButtonStyles, AlternateButtonStyles } from "./styles";
 
 const Button = ({
   type,
   text,
+  icon,
+  click,
   loading,
   disabled,
-  click,
-  icon,
+  alternate,
   ...otherProps
 }) => {
   const buttonElements = (
     <span className={"text__icon"}>
-      <span>{text}</span>
+      <span className="text">{text}</span>
       <span className={"icon"}>{icon}</span>
     </span>
   );
 
-  return (
+  return alternate ? (
+    <AlternateButtonStyles
+      type={type}
+      onClick={click}
+      hasIcon={!!icon}
+      disabled={disabled}
+      {...otherProps}
+    >
+      {loading ? <Loader /> : !icon ? text : buttonElements}
+    </AlternateButtonStyles>
+  ) : (
     <ButtonStyles
       type={type}
       onClick={click}

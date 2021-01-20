@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { Container } from "../Grids/Container";
 import { HeaderStyles } from "./styles";
-import { BsArrowRight as RightArrowIcon } from "react-icons/bs";
+import { CgArrowLongRight as RightArrowIcon } from "react-icons/cg";
 import TRUCSR_LOGO from "../../assets/images/TRUCSR-icon.png";
 
 const Header = () => {

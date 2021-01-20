@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "../../../components/Header";
+import Button from "../../../components/Button";
 import { HeroSectionStyles } from "./styles";
+import { CgArrowLongDown as DownArrowIcon } from "react-icons/cg";
 
 const HeroSection = () => {
   return (
     <HeroSectionStyles>
       <div className="overlay" />
-
-      {/* <Header /> */}
 
       <section>
         <div className="info">
@@ -22,6 +21,14 @@ const HeroSection = () => {
             supporting volunteering or ethically-oriented practices.
           </p>
         </div>
+
+        <Button
+          alternate
+          size="xl"
+          type="button"
+          text="Explore Site"
+          icon={<DownArrowIcon />}
+        />
       </section>
     </HeroSectionStyles>
   );
