@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Container } from "../../../components/Grids/Container";
 
 export const OurServicesStyles = styled(Container)`
-  background: red;
   background-color: #fff;
   flex-direction: column;
   padding: 1rem 12rem 4rem;
