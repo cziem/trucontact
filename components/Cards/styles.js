@@ -111,3 +111,45 @@ export const BlogCardStyle = styled("div")`
     }
   }
 `;
+
+export const ProjectCardStyles = styled("div")`
+  height: 110vh;
+  width: 500px;
+  background: ${({ image }) => image && `url(${image}) no-repeat`};
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .overlay {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+  }
+
+  .card_content {
+    z-index: 1000;
+    position: relative;
+    padding: 5rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: #fff;
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+`;

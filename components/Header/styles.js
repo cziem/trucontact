@@ -5,7 +5,7 @@ export const HeaderStyles = styled("div")`
   display: flex;
   background: transparent;
   background: ${({ position }) => (position < 100 ? "transparent" : "#364bac")};
-  position: fixed;
+  /* position: fixed; */
   z-index: 100000;
 
   .container {
