@@ -30,6 +30,11 @@ const HeroSection = () => {
           icon={<DownArrowIcon />}
         />
       </section>
+
+      <section className="carousel_count">
+        <div className="counter active" />
+        <div className="counter" />
+      </section>
     </HeroSectionStyles>
   );
 };

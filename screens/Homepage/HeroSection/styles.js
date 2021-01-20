@@ -88,6 +88,7 @@ export const HeroSectionStyles = styled("div")`
       }
     }
 
+    /* Hero Button */
     button {
       svg {
         top: 0.3rem;
@@ -95,6 +96,7 @@ export const HeroSectionStyles = styled("div")`
       }
     }
 
+    /* Media Query */
     @media (max-width: 480px) {
       display: flex;
       flex-direction: column;
@@ -103,6 +105,28 @@ export const HeroSectionStyles = styled("div")`
       button {
         margin: 0 auto;
       }
+    }
+  }
+
+  /* Carousel Counter */
+  .carousel_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5rem;
+    width: 30%;
+
+    .counter {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      border: 2px solid #4cb952;
+      margin: 0 0.3rem;
+    }
+
+    .active {
+      background-color: #4cb952;
     }
   }
 
