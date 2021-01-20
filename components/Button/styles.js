@@ -21,7 +21,7 @@ const variantIconSize = (size) =>
       : size === "md"
       ? "medium"
       : size === "lg"
-      ? "large"
+      ? "1.55rem"
       : size === "xl"
       ? "1.68rem"
       : ""
