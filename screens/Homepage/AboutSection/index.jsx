@@ -55,7 +55,7 @@ const AboutSection = () => {
 
           <Button
             alternate
-            size="lg"
+            size="xl"
             type="button"
             text="Read Full Story"
             icon={<RightArrowIcon />}

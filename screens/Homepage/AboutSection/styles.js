@@ -67,6 +67,7 @@ export const AboutSectionStyles = styled(Container)`
 
     .article_title {
       color: #364bac;
+      padding-bottom: 1.5rem;
     }
   }
 
