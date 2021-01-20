@@ -1,13 +1,11 @@
 import React from "react";
 import { CgArrowLongRight as RightArrowIcon } from "react-icons/cg";
 import Button from "../../../components/Button";
-import { AboutSectionStyles } from "./styles";
-import COVID_IMAGE from "../../../assets/images/covid_19.jpg";
-import OFFICE_IMAGE from "../../../assets/images/office.jpg";
+import { AboutUsStyles } from "./styles";
 
-const AboutSection = () => {
+const AboutUs = () => {
   return (
-    <AboutSectionStyles>
+    <AboutUsStyles>
       <header>
         <h2 className="title">About Us</h2>
         <p className="lead_text">
@@ -62,8 +60,8 @@ const AboutSection = () => {
           />
         </article>
       </section>
-    </AboutSectionStyles>
+    </AboutUsStyles>
   );
 };
 
-export default AboutSection;
+export default AboutUs;

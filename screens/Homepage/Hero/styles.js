@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import HeroBNG from "../../../assets/images/hero_bng_1.jpg";
 
-export const HeroSectionStyles = styled("div")`
+export const HeroStyles = styled("div")`
   background: url(${HeroBNG}) center no-repeat;
   background-size: cover;
   height: 110vh;

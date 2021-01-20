@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../../../components/Button";
-import { HeroSectionStyles } from "./styles";
+import { HeroStyles } from "./styles";
 import { CgArrowLongDown as DownArrowIcon } from "react-icons/cg";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
-    <HeroSectionStyles>
+    <HeroStyles>
       <div className="overlay" />
 
       <section>
@@ -35,8 +35,8 @@ const HeroSection = () => {
         <div className="counter active" />
         <div className="counter" />
       </section>
-    </HeroSectionStyles>
+    </HeroStyles>
   );
 };
 
-export default HeroSection;
+export default Hero;

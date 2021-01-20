@@ -3,7 +3,7 @@ import { Container } from "../../../components/Grids/Container";
 import COVID_IMAGE from "../../../assets/images/covid_19.jpg";
 import OFFICE_IMAGE from "../../../assets/images/office.jpg";
 
-export const AboutSectionStyles = styled(Container)`
+export const AboutUsStyles = styled(Container)`
   background-color: #f8f8f8;
   flex-direction: column;
   padding: 1rem 12rem 4rem;
