@@ -15,7 +15,7 @@ const HeroSection = () => {
           <h4>sustainability</h4>
 
           <p>
-            TCSRN <b>founded in 2006</b>,is a consulting company that helps
+            TCSRN <b>founded in 2006</b>, is a consulting company that helps
             organisations to contribute to the societal goals of a
             philanthropic, activist or charitable nature by engaging in or
             supporting volunteering or ethically-oriented practices.

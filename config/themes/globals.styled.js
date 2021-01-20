@@ -33,9 +33,9 @@ export const GlobalStylesNormalizr = createGlobalStyle`
   
   p {
     line-height: ${({ theme }) => theme.lineHeights.p};
-    color: ${({ theme }) => theme.palette.text.secondary};
+    color: ${({ theme }) => theme.palette.text.primary};
     letter-spacing: 0.00938em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Rubik', sans-serif;
   }
   
@@ -74,31 +74,31 @@ export const GlobalStylesNormalizr = createGlobalStyle`
   
   h2 {
     line-height: 1.2;
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     letter-spacing: -0.00833em;
   }
   
   h3 {
     line-height: 1.167;
-    font-size: 3rem;
+    font-size: 1.8rem;
     letter-spacing: 0;
   }
   
   h4 {
     line-height: 1.235;
-    font-size: 2.125rem;
+    font-size: 1.25rem;
     letter-spacing: 0.00735em;
   }
   
   h5 {
     line-height: 1.334;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     letter-spacing: 0;
   }
   
   h6 {
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.12;
     font-size: 1.25rem;
     letter-spacing: 0.0075em;
   }

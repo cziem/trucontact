@@ -78,7 +78,7 @@ const light = {
       contrastText: "#424242",
     },
     text: {
-      primary: "rgba(0, 0, 0, 0.68)",
+      primary: "#333",
       secondary: "rgba(0, 0, 0, 0.54)",
       disabled: "rgba(0, 0, 0, 0.38)",
       placeholder: "rgba(82,85,96,0.5)",
