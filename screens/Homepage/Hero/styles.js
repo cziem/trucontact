@@ -78,12 +78,16 @@ export const HeroStyles = styled("div")`
         }
       }
 
-      @media (max-width: 480px) {
+      @media (max-width: 511px) {
         text-align: center;
 
         h3 {
           font-size: 2rem;
           font-weight: 600;
+        }
+
+        h4 {
+          font-size: 1.8rem;
         }
       }
     }
@@ -130,7 +134,38 @@ export const HeroStyles = styled("div")`
     }
   }
 
-  @media (max-width: 649px) {
+  @media screen and (max-width: 649px) {
+    padding: 0 3rem;
+
+    section {
+      text-align: center;
+    }
+
+    section.info {
+      h3 {
+        font-size: 1rem;
+        color: red;
+      }
+    }
+
+    button {
+      span.text {
+        font-size: 1.25rem !important;
+      }
+
+      span.icon svg {
+        font-size: 1.25rem !important;
+      }
+    }
+
+    .carousel_count {
+      width: 80%;
+      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 649px) and (max-width: 717px) {
     padding: 0 3rem;
   }
 `;

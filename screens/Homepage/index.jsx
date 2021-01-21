@@ -10,7 +10,7 @@ import Projects from "./Projects";
 const Homepage = () => {
   return (
     <PublicLayout>
-      {/* <HeroSection /> */}
+      <HeroSection />
       {/* <AboutUs /> */}
       {/* <OurServices /> */}
       {/* <Projects /> */}
