@@ -6,17 +6,23 @@ export const CardStyles = styled("div")`
   .image_wrap {
     width: 100%;
     height: 300px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    overflow: hidden;
 
     .image {
       width: 100%;
       height: 100%;
       background: ${({ image }) => image && `url(${image}) no-repeat`};
-      border-top-right-radius: 8px;
-      border-top-left-radius: 8px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
       background-size: cover;
       background-position: center;
+      transition: transform 0.35s ease-in;
+
+      &:hover {
+        transform: scale(1.25);
+      }
     }
   }
 
