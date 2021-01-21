@@ -7,10 +7,11 @@ export const HeaderStyles = styled("div")`
   top: 0;
   left: 0;
   z-index: 10000;
+  width: 100%;
 
   .headerBox {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 8rem;
