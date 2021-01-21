@@ -123,6 +123,7 @@ export const ProjectCardStyles = styled("div")`
   width: 500px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 
   .wrapper {
     background: ${({ image }) => image && `url(${image}) no-repeat`};
