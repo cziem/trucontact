@@ -153,3 +153,55 @@ export const ProjectCardStyles = styled("div")`
     }
   }
 `;
+
+export const TestimonialCardStyles = styled("div")`
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1.5rem;
+  padding: 0 5rem;
+
+  .image_wrap {
+    width: 13rem;
+    height: 14rem;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      background: ${({ image }) => image && `url(${image}) no-repeat`};
+      background-size: cover;
+      background-position: center top;
+      border-top-left-radius: 20%;
+      box-shadow: 5px 10px 40px -10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .card_content {
+    padding: 0 1.5rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .text {
+      padding-bottom: 2.2rem;
+      font-size: 1.35rem;
+      font-weight: 300;
+      position: relative;
+    }
+
+    .name {
+      color: #364bac;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .position {
+      color: #ababab;
+      font-weight: 500;
+      font-size: 0.87rem;
+    }
+  }
+`;
