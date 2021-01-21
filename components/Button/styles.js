@@ -105,7 +105,11 @@ export const ButtonStyles = styled.button`
   .icon {
     position: relative;
     padding-left: 1rem;
-    transition: position 0.2s ease-in-out;
+    left: 0;
+    -webkit-transition: ${({ noAnimation }) =>
+      noAnimation ? null : "left 0.25s ease-in"};
+    transition: ${({ noAnimation }) =>
+      noAnimation ? null : "left 0.25s ease-in"};
 
     svg {
       font-size: ${({ size }) => variantIconSize(size)};
@@ -118,6 +122,10 @@ export const ButtonStyles = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &:hover .icon {
+    left: ${({ noAnimation }) => (noAnimation ? null : "-12px")};
   }
 `;
 
@@ -149,7 +157,11 @@ export const AlternateButtonStyles = styled("button")`
     border-bottom: 0;
     position: relative;
     padding-left: 1rem;
-    transition: position 0.2s ease-in-out;
+    left: 0;
+    -webkit-transition: ${({ noAnimation }) =>
+      noAnimation ? null : "left 0.25s ease-in"};
+    transition: ${({ noAnimation }) =>
+      noAnimation ? null : "left 0.25s ease-in"};
 
     svg {
       font-weight: 600;
@@ -163,5 +175,9 @@ export const AlternateButtonStyles = styled("button")`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &:hover .icon {
+    left: ${({ noAnimation }) => (noAnimation ? null : "-12px")};
   }
 `;

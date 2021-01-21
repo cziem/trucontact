@@ -24,6 +24,7 @@ const Hero = () => {
 
         <Button
           alternate
+          noAnimation
           size="xl"
           type="button"
           text="Explore Site"
