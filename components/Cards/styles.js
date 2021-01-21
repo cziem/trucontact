@@ -121,10 +121,23 @@ export const BlogCardStyle = styled("div")`
 export const ProjectCardStyles = styled("div")`
   height: 110vh;
   width: 500px;
-  background: ${({ image }) => image && `url(${image}) no-repeat`};
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   position: relative;
+
+  .wrapper {
+    background: ${({ image }) => image && `url(${image}) no-repeat`};
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.35s ease-in;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover .wrapper,
+  &:focus .wrapper {
+    transform: scale(1.25);
+  }
 
   .overlay {
     top: 0;
@@ -138,7 +151,8 @@ export const ProjectCardStyles = styled("div")`
 
   .card_content {
     z-index: 1000;
-    position: relative;
+    top: 0;
+    position: absolute;
     padding: 5rem 2rem;
     height: 100%;
     display: flex;

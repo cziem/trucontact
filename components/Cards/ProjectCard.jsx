@@ -5,8 +5,9 @@ import { ProjectCardStyles } from "./styles";
 const ProjectCard = ({ image, title, text }) => {
   return (
     <ProjectCardStyles image={image}>
-      <div className="overlay" />
-
+      <div className="wrapper">
+        <div className="overlay" />
+      </div>
       <div className="card_content">
         <p className="title">{title}</p>
 
