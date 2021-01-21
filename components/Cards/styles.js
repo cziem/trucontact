@@ -101,7 +101,6 @@ export const BlogCardStyle = styled("div")`
     }
 
     p {
-      /* color: #dedede; */
       text-align: justify;
       padding-bottom: 2.5rem;
     }
@@ -113,6 +112,104 @@ export const BlogCardStyle = styled("div")`
 
       span.text {
         font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 537px) {
+    display: flex;
+    flex-direction: column;
+
+    .image_wrap {
+      height: 250px;
+    }
+
+    .card_content {
+      .date {
+        padding-bottom: 1.5rem;
+      }
+
+      .title {
+        font-size: 1.45rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        span.text {
+          font-size: 1.15rem;
+        }
+
+        span.icon svg {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 538px) and (max-width: 753px) {
+    .card_content {
+      .date {
+        padding-bottom: 1.1rem;
+      }
+
+      .title {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.785rem;
+      }
+
+      button {
+        span.text {
+          font-size: 1rem;
+        }
+
+        span.icon svg {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 754px) and (max-width: 900px) {
+    .card_content {
+      .date {
+        padding-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1025px) {
+    .card_content {
+      padding: 1rem;
+
+      .date {
+        padding-bottom: 1.5rem;
+      }
+
+      .title {
+        font-size: 1.45rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 902px) and (max-width: 1222px) {
+    .card_content {
+      p {
+        font-size: 1rem;
       }
     }
   }

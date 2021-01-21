@@ -32,4 +32,16 @@ export const BlogStyles = styled(Container)`
       }
     }
   }
+
+  @media screen and (max-width: 900px) {
+    & {
+      padding: 1rem 2rem;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    & {
+      padding: 1rem;
+    }
+  }
 `;

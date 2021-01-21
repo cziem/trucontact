@@ -12,7 +12,7 @@ const Footer = () => {
     <FooterStyles>
       <Container>
         <div className="content_wrapper">
-          <section>
+          <section className="service">
             <p className="heading">Customer Service</p>
 
             <ul className="footer-items-list">
@@ -24,7 +24,7 @@ const Footer = () => {
               </a>
             </ul>
           </section>
-          <section>
+          <section className="business">
             <p className="heading">Business</p>
 
             <ul className="footer-items-list">
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
             </ul>
           </section>
-          <section>
+          <section className="company">
             <p className="heading">Company</p>
 
             <ul className="footer-items-list">

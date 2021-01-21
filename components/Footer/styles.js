@@ -73,4 +73,44 @@ export const FooterStyles = styled("div")`
       }
     }
   }
+
+  @media screen and (max-width: 930px) {
+    .content_wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem 8rem;
+
+      .address_info p {
+        text-align: left;
+      }
+
+      .social_info {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  @media screen and (min-width: 250px) and (max-width: 640px) {
+    & > div {
+      padding: 1rem 2rem;
+    }
+
+    .content_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 3rem;
+      width: 100%;
+      justify-items: center;
+
+      section {
+        text-align: center;
+      }
+
+      .address_info p {
+        text-align: center;
+      }
+
+      .social_info {
+        justify-content: center;
+      }
+    }
+  }
 `;
