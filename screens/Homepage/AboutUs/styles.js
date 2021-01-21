@@ -119,6 +119,7 @@ export const AboutUsStyles = styled(Container)`
     }
   }
 
+  /* General Padding */
   @media screen and (max-width: 910px) {
     & {
       padding: 1rem 2rem 3rem;

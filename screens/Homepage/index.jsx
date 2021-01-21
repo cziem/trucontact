@@ -12,7 +12,7 @@ const Homepage = () => {
     <PublicLayout>
       <HeroSection />
       <AboutUs />
-      {/* <OurServices /> */}
+      <OurServices />
       <Projects />
       {/* <OurPartners /> */}
       <Blog />
