@@ -10,12 +10,12 @@ import Projects from "./Projects";
 const Homepage = () => {
   return (
     <PublicLayout>
-      <HeroSection />
-      <AboutUs />
-      <OurServices />
-      <Projects />
-      <OurPartners />
-      <Blog />
+      {/* <HeroSection /> */}
+      {/* <AboutUs /> */}
+      {/* <OurServices /> */}
+      {/* <Projects /> */}
+      {/* <OurPartners /> */}
+      {/* <Blog /> */}
     </PublicLayout>
   );
 };
