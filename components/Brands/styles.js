@@ -18,4 +18,15 @@ export const BrandsStyles = styled("div")`
       object-fit: contain;
     }
   }
+
+  @media screen and (max-width: 1243px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem 2rem;
+
+    .brand_item {
+      width: 100%;
+      height: auto;
+    }
+  }
 `;

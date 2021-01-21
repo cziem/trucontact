@@ -401,4 +401,59 @@ export const TestimonialCardStyles = styled("div")`
       font-size: 0.87rem;
     }
   }
+
+  @media screen and (max-width: 1119px) {
+    .image_wrap {
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 908px) {
+    width: 100%;
+
+    .card_content {
+      .text {
+        font-size: 1.15rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 908px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image_wrap {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+
+      .image {
+        border-radius: 50%;
+      }
+    }
+
+    .card_content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .name {
+        padding-bottom: 1rem;
+      }
+
+      .text {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 1rem;
+
+    .card_content .text {
+      text-align: center;
+    }
+  }
 `;
