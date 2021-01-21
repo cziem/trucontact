@@ -2,9 +2,10 @@ import React from "react";
 import { CgArrowLongRight as RightArrowIcon } from "react-icons/cg";
 import { generateID } from "../../../lib/helpers";
 import { OurPartnersStyles } from "./styles";
-import { testimonialList } from "./data";
+import { testimonialList, brandsList } from "./data";
 import TestimonialCard from "../../../components/Cards/TestimonialCard";
 import Button from "../../../components/Button";
+import Brands from "../../../components/Brands";
 
 const OurPartners = () => {
   return (
@@ -17,6 +18,11 @@ const OurPartners = () => {
           finding your brands inner sanctum.
         </p>
       </header>
+
+      {/* Partner companies */}
+      <section className="brands">
+        <Brands brands={brandsList} />
+      </section>
 
       {/* Testimonials */}
       {testimonialList.map((item) => (

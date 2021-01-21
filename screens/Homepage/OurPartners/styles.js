@@ -10,7 +10,7 @@ export const OurPartnersStyles = styled(Container)`
     grid-template-columns: 1fr 3fr;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     .title {
       color: #364bac;
@@ -40,6 +40,11 @@ export const OurPartnersStyles = styled(Container)`
       line-height: 1.5;
       text-align: justify;
     }
+  }
+
+  .brands {
+    width: 100%;
+    margin: 0 auto 4.5rem;
   }
 
   .cta {
