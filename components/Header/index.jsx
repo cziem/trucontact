@@ -6,20 +6,8 @@ import { CgArrowLongRight as RightArrowIcon } from "react-icons/cg";
 import TRUCSR_LOGO from "../../assets/images/TRUCSR-icon.png";
 
 const Header = () => {
-  const [position, setPosition] = useState(0);
-
-  const handleScroll = () => setPosition(window.scrollY);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    setPosition(window.screenY);
-
-    // Clean up
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [position]);
-
   return (
-    <HeaderStyles position={position}>
+    <HeaderStyles>
       <Container className="container">
         <div className="logo">
           <img src={TRUCSR_LOGO} alt="trucsr" />

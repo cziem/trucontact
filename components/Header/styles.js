@@ -4,9 +4,8 @@ export const HeaderStyles = styled("div")`
   width: 100%;
   display: flex;
   background: transparent;
-  background: ${({ position }) => (position < 100 ? "transparent" : "#364bac")};
-  /* position: fixed; */
-  z-index: 100000;
+  position: absolute;
+  z-index: 10000;
 
   .container {
     width: 100%;
