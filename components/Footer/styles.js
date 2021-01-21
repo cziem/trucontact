@@ -7,22 +7,6 @@ export const FooterStyles = styled("div")`
   .content_wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
-    /* .service {
-      grid-area: service;
-    }
-
-    .business {
-      grid-area: business;
-    }
-
-    .company {
-      grid-area: company;
-    }
-
-    .address {
-      grid-area: address;
-    } */
   }
 
   .heading {
