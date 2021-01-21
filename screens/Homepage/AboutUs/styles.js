@@ -33,6 +33,23 @@ export const AboutUsStyles = styled(Container)`
         background-color: #364bac;
         left: -0.4rem;
         top: 30%;
+
+        @media screen and (max-width: 1303px) {
+          top: 25%;
+        }
+        @media screen and (max-width: 1064px) {
+          top: 22%;
+        }
+
+        @media screen and (max-width: 1230px) {
+          left: -6%;
+        }
+        @media screen and (max-width: 1138px) {
+          left: -15%;
+        }
+        @media screen and (max-width: 954px) {
+          left: -15%;
+        }
       }
     }
 
@@ -97,9 +114,87 @@ export const AboutUsStyles = styled(Container)`
       position: relative;
 
       button {
-        position: absolute;
-        bottom: 0;
+        margin-top: 1rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    & {
+      padding: 1rem 2rem 3rem;
+    }
+  }
+  @media screen and (min-width: 911px) and (max-width: 1035px) {
+    & {
+      padding: 1rem 6rem 3rem;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    & {
+      padding: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1035px) {
+    header {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1242px) {
+    .main article,
+    .sub_main article {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .sub_main article button {
+      span.text,
+      span.icon svg {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1138px) {
+    .main,
+    .sub_main {
+      grid-column-gap: 1.5rem;
+    }
+
+    .main .image_wrap,
+    .sub_main .image_wrap {
+      height: auto;
+    }
+
+    .main .article_title {
+      padding-bottom: 0.65rem;
+    }
+  }
+
+  @media screen and (max-width: 634px) {
+    .main,
+    .sub_main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main .image_wrap,
+    .sub_main .image_wrap {
+      display: none;
+    }
+
+    .main .article_title {
+      padding-bottom: 0.65rem;
     }
   }
 `;

@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <PublicLayout>
       <HeroSection />
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <OurServices /> */}
       <Projects />
       {/* <OurPartners /> */}
