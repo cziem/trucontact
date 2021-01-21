@@ -58,6 +58,67 @@ export const CardStyles = styled("div")`
       }
     }
   }
+
+  @media screen and (max-width: 1291px) {
+    .card_content {
+      height: 400px;
+
+      .title {
+        text-align: left;
+      }
+
+      p {
+        font-size: 128%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 769px) {
+    .card_content {
+      height: 280px;
+
+      button {
+        span.text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 559px) {
+    width: 80%;
+    margin: 0 auto;
+
+    .card_content {
+      height: 300px;
+
+      p {
+        font-size: 0.98rem;
+      }
+
+      button {
+        span.text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .card_content {
+      height: auto;
+
+      p {
+        font-size: 0.98rem;
+      }
+
+      button {
+        span.text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 `;
 
 export const BlogCardStyle = styled("div")`
