@@ -270,6 +270,24 @@ export const ProjectCardStyles = styled("div")`
       color: #fff;
     }
   }
+
+  @media screen and (max-width: 407px) {
+    width: 450px;
+    text-align: center;
+
+    .card_content {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 455px) {
+    .card_content {
+      .title {
+        font-size: 2.45rem;
+      }
+    }
+  }
 `;
 
 export const TestimonialCardStyles = styled("div")`
