@@ -59,4 +59,15 @@ export const ProjectStyles = styled("div")`
       }
     }
   }
+
+  @media screen and (max-width: 455px) {
+    .cta {
+      button {
+        span.text,
+        span.icon svg {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 `;
