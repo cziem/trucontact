@@ -15,13 +15,11 @@ export const BrandsStyles = styled("div")`
       width: max-content;
       position: relative;
       left: 0;
-      /* :hover {
-        animation: scroll 14s 1 ease;
-      } */
 
       .brands_sub_cover {
         width: max-content;
         display: flex;
+
         .brand_item {
           height: 120px;
           width: 200px;
@@ -29,7 +27,7 @@ export const BrandsStyles = styled("div")`
           background-color: #fff;
           margin: 1rem 1.2rem;
           border-radius: 3px;
-          box-shadow: 0px 13px 20px 10px rgb(0 0 0 / 10%);
+          box-shadow: 5px 4px 11px 2px rgb(0 0 0 / 10%);
 
           img {
             width: 100%;
@@ -40,17 +38,6 @@ export const BrandsStyles = styled("div")`
       }
     }
   }
-
-  /* @media screen and (max-width: 1243px) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem 2rem;
-
-    .brand_item {
-      width: 100%;
-      height: auto;
-    }
-  } */
 
   @keyframes scroll {
     0%,
