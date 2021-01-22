@@ -17,7 +17,7 @@ export const testimonialList = [
   },
 ];
 
-export const brandsList = [
+export const brandsListTop = [
   {
     name: "nestle",
     image: NestleImage,
@@ -35,6 +35,44 @@ export const brandsList = [
     image: LaFargeImage,
   },
   {
+    name: "nestle",
+    image: NestleImage,
+  },
+  {
+    name: "first bank",
+    image: FBNImage,
+  },
+  {
+    name: "gt bank",
+    image: GTBImage,
+  },
+  {
+    name: "lafarge",
+    image: LaFargeImage,
+  },
+  {
+    name: "nestle",
+    image: NestleImage,
+  },
+  {
+    name: "first bank",
+    image: FBNImage,
+  },
+  {
+    name: "gt bank",
+    image: GTBImage,
+  },
+  {
+    name: "lafarge",
+    image: LaFargeImage,
+  },
+  {
+    name: "nestle",
+    image: NestleImage,
+  },
+];
+export const brandsListDown = [
+  {
     name: "act",
     image: ACTImage,
   },
@@ -49,5 +87,49 @@ export const brandsList = [
   {
     name: "fcmb",
     image: FCMBImage,
+  },
+  {
+    name: "act",
+    image: ACTImage,
+  },
+  {
+    name: "chevron",
+    image: ChevronImage,
+  },
+  {
+    name: "dangote",
+    image: DangoteImage,
+  },
+  {
+    name: "fcmb",
+    image: FCMBImage,
+  },
+  {
+    name: "act",
+    image: ACTImage,
+  },
+  {
+    name: "chevron",
+    image: ChevronImage,
+  },
+  {
+    name: "dangote",
+    image: DangoteImage,
+  },
+  {
+    name: "fcmb",
+    image: FCMBImage,
+  },
+  {
+    name: "act",
+    image: ACTImage,
+  },
+  {
+    name: "chevron",
+    image: ChevronImage,
+  },
+  {
+    name: "dangote",
+    image: DangoteImage,
   },
 ];

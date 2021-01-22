@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ProjectCardStyles } from "./styles";
 
-const ProjectCard = React.forwardRef(({ image, title, text }, ref) => {
+const ProjectCard = ({ image, title, text }) => {
   return (
-    <ProjectCardStyles image={image} ref={ref}>
+    <ProjectCardStyles image={image}>
       <div className="wrapper">
         <div className="overlay" />
       </div>
@@ -15,7 +15,7 @@ const ProjectCard = React.forwardRef(({ image, title, text }, ref) => {
       </div>
     </ProjectCardStyles>
   );
-});
+};
 
 ProjectCard.PropTypes = {
   title: PropTypes.string.isRequired,
