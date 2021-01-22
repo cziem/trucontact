@@ -279,6 +279,8 @@ export const BlogCardStyle = styled("div")`
 export const ProjectCardStyles = styled("div")`
   height: 110vh;
   width: 500px;
+  min-width: 500px;
+  margin: 0 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;

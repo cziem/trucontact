@@ -13,7 +13,7 @@ const OurPartners = () => {
       <header>
         <h2 className="title">Our Partners</h2>
         <p className="lead_text">
-          Our team seek to help your organisation navigate this threshold that
+          Our team seek to help your organization navigate this threshold that
           stands between you and your brands and distinctive innovations, and
           finding your brands inner sanctum.
         </p>

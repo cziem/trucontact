@@ -44,11 +44,37 @@ export const ProjectStyles = styled("div")`
 
   .project_gallery {
     position: relative;
-    left: -28%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.55rem;
+    /* left: -28%; */
+    right: 28%;
+    /* width: max-content; */
+    min-width: 2100px;
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* column-gap: 1.55rem; */
+    transition: left 0.35s ease-in;
+    & > div {
+      transition: margin 0.35s ease-in;
+      :first-child:hover {
+        margin-left: 700px;
+      }
+      :last-child:hover {
+        margin-right: 700px;
+      }
+    }
+    @media (max-width: 1350px) {
+      right: 30%;
+      & > div {
+        width: 450px;
+        min-width: 450px;
+        :first-child:hover {
+          margin-left: 555px;
+        }
+        :last-child:hover {
+          margin-right: 555px;
+        }
+      }
+    }
   }
 
   .cta {
