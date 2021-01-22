@@ -279,6 +279,8 @@ export const BlogCardStyle = styled("div")`
 export const ProjectCardStyles = styled("div")`
   height: 110vh;
   width: 500px;
+  min-width: 500px;
+  margin: 0 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -332,21 +334,21 @@ export const ProjectCardStyles = styled("div")`
     }
   }
 
-  @media screen and (max-width: 407px) {
-    width: 450px;
-    text-align: center;
-
-    .card_content {
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
-
   @media screen and (max-width: 455px) {
     .card_content {
       .title {
         font-size: 2.45rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 513px) {
+    height: 80vh;
+    margin: 0.5rem 1rem;
+
+    .title,
+    p {
+      text-align: center;
     }
   }
 `;

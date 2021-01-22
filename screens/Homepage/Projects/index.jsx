@@ -1,10 +1,10 @@
 import React from "react";
 import { CgArrowLongRight as RightArrowIcon } from "react-icons/cg";
-import { ProjectStyles } from "./styles";
-import { ourProjectList } from "./data";
+import Button from "../../../components/Button";
 import ProjectCard from "../../../components/Cards/ProjectCard";
 import { generateID } from "../../../lib/helpers";
-import Button from "../../../components/Button";
+import { ourProjectList } from "./data";
+import { ProjectStyles } from "./styles";
 
 const Projects = () => {
   return (
@@ -13,11 +13,13 @@ const Projects = () => {
         <h2 className="title">Our Projects</h2>
       </header>
 
-      <section className="project_gallery">
-        {ourProjectList.map((item) => (
-          <ProjectCard key={generateID(12)} {...item} />
-        ))}
-      </section>
+      <div className="overflow_wrapper">
+        <section className="project_gallery">
+          {ourProjectList.map((item) => (
+            <ProjectCard key={generateID(12)} {...item} />
+          ))}
+        </section>
+      </div>
 
       <div className="cta">
         <Button

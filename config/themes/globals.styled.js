@@ -17,6 +17,10 @@ export const GlobalStylesNormalizr = createGlobalStyle`
     outline: none;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   button::-moz-focus-inner {
     border: 0;
   }
