@@ -22,7 +22,7 @@ export const BrandsStyles = styled("div")`
 
         .brand_item {
           height: 120px;
-          width: 200px;
+          width: 235px;
           padding: 20px 25px;
           background-color: #fff;
           margin: 1rem 1.2rem;
@@ -33,6 +33,10 @@ export const BrandsStyles = styled("div")`
             width: 100%;
             height: 100%;
             object-fit: contain;
+          }
+
+          @media screen and (max-width: 1103px) {
+            width: 200px;
           }
         }
       }

@@ -5,36 +5,18 @@ import { BrandsStyles } from "./styles";
 
 const Brands = ({ brandsTop, brandsDown }) => {
   const brandRef = React.createRef();
-  const [canRun, setCanRun] = React.useState(true);
 
   const scrollBrands = () => {
     brandRef.current.classList.add("scroll_brand");
-
-    // if (brandRef.current.classList.contains("scroll_brand")) {
-    //   brandRef.current.classList.remove("scroll_brand");
-    // }
-
-    // canRun && brandRef.current.classList.add("scroll_brand");
-  };
-  const ignoreScrollBrands = () => {
-    // brandRef.current.classList.remove("scroll_brand");
-    // window.addEventListener("animationend", () => {
-    //   setCanRun(true);
-    //   brandRef.current.classList.remove("scroll_brand");
-    //   console.log("finished");
-    // });
   };
 
   React.useEffect(() => {
     window.addEventListener("animationend", () => {
       const el = document.querySelector(".scroll_brand");
-      el.classList.remove("scroll_brand");
-      console.log(el, "finished");
+      if (el) {
+        el.classList.remove("scroll_brand");
+      }
     });
-    // window.addEventListener("animationstart", () => {
-    //   setCanRun(false);
-    //   console.log("starting");
-    // });
   }, [brandRef]);
 
   return (
@@ -42,7 +24,6 @@ const Brands = ({ brandsTop, brandsDown }) => {
       <div className="brand_styles_sub_div">
         <div
           onMouseEnter={scrollBrands}
-          onMouseLeave={ignoreScrollBrands}
           className="brands_main_cover"
           ref={brandRef}
         >
