@@ -31,15 +31,20 @@ export const ProjectStyles = styled("div")`
     }
   }
 
-  .project_gallery {
-    overflow-y: hidden;
+  .overflow_wrapper {
+    overflow: hidden;
+    width: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;
 
     &::-webkit-scrollbar {
       display: none;
     }
+  }
 
+  .project_gallery {
+    position: relative;
+    left: -28%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -13,11 +13,13 @@ const Projects = () => {
         <h2 className="title">Our Projects</h2>
       </header>
 
-      <section className="project_gallery">
-        {ourProjectList.map((item) => (
-          <ProjectCard key={generateID(12)} {...item} />
-        ))}
-      </section>
+      <div className="overflow_wrapper">
+        <section className="project_gallery">
+          {ourProjectList.map((item) => (
+            <ProjectCard key={generateID(12)} {...item} />
+          ))}
+        </section>
+      </div>
 
       <div className="cta">
         <Button
